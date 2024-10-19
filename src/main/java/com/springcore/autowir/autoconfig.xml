@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- 1st Bean -->
+    <bean class="com.springcore.autowir.Address" name="address1">
+        <property name="street" value="Temp Street" />
+        <property name="city" value="XYZ" />
+    </bean>
+    
+    <!-- 2nd Bean By Name Autowiring(Reference bean ka name)
+    <bean class="com.springcore.autowir.Employee" name="emp" autowire="byName" />
+    -->
+    
+    <!-- 2nd Bean 
+    <bean class="com.springcore.autowir.Employee" name="emp" autowire="constructor" />
+    -->
+    
+    <!-- 2nd Bean By Type Autowiring(Reference kis type ka hai)-->
+    <bean class="com.springcore.autowir.Employee" name="emp" autowire="byType" />
+    
+</beans>
