@@ -8,11 +8,11 @@ public class Test {
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/stereo/stereoconfig.xml");
 //		Student student=(Student) context.getBean("student"); //By default
 		Student student=(Student) context.getBean("ob");
-		//System.out.println(student);
+		System.out.println(student);
 		System.out.println(student.hashCode());
 		
 		Student student1=(Student) context.getBean("ob");
-		//System.out.println(student1);
+		System.out.println(student1);
 		System.out.println(student1.hashCode());
 	}
 }
