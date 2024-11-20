@@ -11,6 +11,7 @@ public class Employee {
 	public Address getAddress() {
 		return address;
 	}
+	
 	//@Autowired
 	public void setAddress(Address address) {
 		System.out.println("Setting value");
@@ -20,6 +21,7 @@ public class Employee {
 	public Employee() {
 		super();
 	}
+	
 	//@Autowired
 	public Employee(Address address) {
 		super();

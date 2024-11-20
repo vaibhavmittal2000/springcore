@@ -21,5 +21,7 @@
         <value>Gurugram</value>
         <value>Haryana</value>
     </util:list>
+    
+    <bean class="com.springcore.stereo.Teacher" name="teacher" scope="prototype" />
    
 </beans>

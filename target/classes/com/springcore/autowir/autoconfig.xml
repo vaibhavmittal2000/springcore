@@ -14,7 +14,7 @@
         <property name="city" value="XYZ" />
     </bean>
     
-    <!-- 2nd Bean By Name Autowiring(Reference bean ka name)
+    <!-- 2nd Bean By Name Autowiring(Reference bean ka name and object variable name same)
     <bean class="com.springcore.autowir.Employee" name="emp" autowire="byName" />
     -->
     

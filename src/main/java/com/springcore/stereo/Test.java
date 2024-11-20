@@ -14,5 +14,10 @@ public class Test {
 		Student student1=(Student) context.getBean("ob");
 		System.out.println(student1);
 		System.out.println(student1.hashCode());
+		
+		Teacher t1=(Teacher) context.getBean("teacher");
+		Teacher t2=(Teacher) context.getBean("teacher");
+		System.out.println(t1.hashCode());
+		System.out.println(t2.hashCode());
 	}
 }
